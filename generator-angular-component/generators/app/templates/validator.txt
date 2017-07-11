@@ -1,0 +1,10 @@
+import FluentValidator from 'fluent-validator';
+
+export default class <%=modelName%>Validator extends FluentValidator {
+    constructor() {
+        super();
+
+        this.ruleFor('label').notEmpty().withMessage('VALIDATION_NOTEMPTY');
+        this.ruleFor('label').lengthBetweenValues(0, 15).withMessage('VALIDATION_TOO_LONG_15');
+    }
+}

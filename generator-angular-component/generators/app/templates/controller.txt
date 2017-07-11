@@ -1,0 +1,38 @@
+export default function <%=componentName%>Controller() {
+    const vm = this;
+
+    // propriétés
+
+    // méthodes publiques
+    vm.$onInit = $onInit;
+
+    // events
+
+    //region Initialisation
+    function $onInit() {
+        vm.loading = false;
+    }
+
+    //endregion Initialisation
+
+    //region Méthodes publiques
+
+    //endregion Méthodes publiques
+
+    //region Méthodes privées
+    function startLoading() {
+        vm.loading = true;
+    }
+
+    function stopLoading() {
+        vm.loading = false;
+    }
+
+    //endregion Méthodes privées
+
+    //region Events
+
+    //endregion Events
+}
+
+<%=componentName%>Controller.$inject = [];

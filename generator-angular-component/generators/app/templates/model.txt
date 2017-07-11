@@ -1,0 +1,11 @@
+import ValidableModel from 'validable-model';
+import modelValidator from './model.validator';
+
+export default class <%=modelName%> extends ValidableModel {
+    constructor(data = {}) {
+        super(<%=modelName%>Validator);
+
+        this.id = data.id;
+        this.label = data.label;
+    }
+}

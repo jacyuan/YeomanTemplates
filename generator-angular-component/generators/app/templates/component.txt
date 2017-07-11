@@ -1,0 +1,6 @@
+import Controller from './<%=componentFileName%>.controller';
+
+export default {
+    template: require('./<%=componentFileName%>.html'),
+    controller: Controller
+};
