@@ -44,6 +44,15 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    //index.js
+    this.fs.copyTpl(
+      this.templatePath('index.txt'),
+      this.destinationPath(`./${this.componentFileName}/index.js`),
+      {
+        componentFileName: this.componentFileName
+      }
+    );
+
     //index.html
     this.fs.copy(
       this.templatePath('html.txt'),
@@ -55,7 +64,6 @@ module.exports = class extends Generator {
       this.templatePath('controller.txt'),
       this.destinationPath(`./${this.componentFileName}/${this.componentFileName}.controller.js`),
       {
-        componentName: this.componentName,
         componentFileName: this.componentFileName
       }
     );

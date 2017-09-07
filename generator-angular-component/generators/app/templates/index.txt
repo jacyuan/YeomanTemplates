@@ -1,0 +1,12 @@
+import * as angular from 'angular';
+
+import componentName from './<%=componentFileName%>.component.js';
+
+//todo module name
+const moduleName = 'moduleName';
+
+angular.module(moduleName, [])
+  .component('componentName', componentName)
+;
+
+export default moduleName;

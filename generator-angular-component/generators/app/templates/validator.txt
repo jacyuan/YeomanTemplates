@@ -1,4 +1,4 @@
-import FluentValidator from 'fluent-validator';
+import FluentValidator from 'blocks.validation/fluent-validator';
 
 export default class <%=modelName%>Validator extends FluentValidator {
     constructor() {
